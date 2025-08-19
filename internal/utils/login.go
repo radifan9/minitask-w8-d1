@@ -2,6 +2,7 @@ package utils
 
 import (
 	"errors"
+	"fmt"
 )
 
 type userPass struct {
@@ -10,6 +11,8 @@ type userPass struct {
 }
 
 func TryLogin(username string, password string) (string, error) {
+	fmt.Printf("\n\n--- --- No 2 --- ---\n")
+
 	// user1 instance
 	user1 := userPass{
 		username: "opet",

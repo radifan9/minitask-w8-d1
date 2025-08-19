@@ -21,7 +21,6 @@ type template struct {
 
 // PrintInfo demonstrates the usage of the user data structure
 func PrintInfo() {
-
 	// Create some school instances
 	schoolSMK := school{
 		nama:    "SMK 1 Surabaya",
