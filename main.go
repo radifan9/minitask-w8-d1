@@ -8,5 +8,18 @@ import (
 
 func main() {
 	fmt.Println("Minitask W8 D1")
-	utils.PrintInfo()
+
+	// No 1
+	// utils.PrintInfo()
+
+	// No 2
+	success, err := utils.TryLogin("opet", "opet123")
+	// Check wether there's an error or not. If there's an error, err should not be nil
+	if err == nil {
+		// Logged in sucess
+		fmt.Println(success)
+	} else {
+		// Logged in failed
+		fmt.Println(err.Error())
+	}
 }
