@@ -28,5 +28,14 @@ func main() {
 	fmt.Println("Largest Number : ", largestNum)
 
 	// --- --- No 4 --- ---
+	convertedTemp, convertedScale, error := utils.ConvertTemp(100.0, "C", "F")
+	fmt.Println(convertedTemp)
+	fmt.Println(convertedScale)
+	fmt.Println(error)
 
+	// Should be 373.15
+	fmt.Printf("Suhu hasil konversi : %f %s\n", float64(convertedTemp), convertedScale)
+
+	// --- --- No 5 --- ---
+	utils.AppendSlice()
 }
